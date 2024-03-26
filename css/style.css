@@ -85,7 +85,7 @@ body {
     font-family: var(--fonte-texto);
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 0px 8px 20px 8px;
 }
 
 .cards-lista {
@@ -148,7 +148,7 @@ body {
     font-family: var(--fonte-texto);
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 0px 8px 20px 8px;
 }
 
 #abrir-cardapio {
@@ -160,17 +160,16 @@ body {
     font-weight: 700;
     color: white;
     background-color: var(--cor-secundaria);
-    width: 260px;
-    height: 48px;
     border-radius: 50px;
+    padding: 16px 32px;
     margin-bottom: 40px;
 }
 
 #abrir-cardapio:hover {
-    transition: .2s;
+    transition: .1s;
     background: none;
     color: var(--cor-secundaria);
-    border: 2px solid var(--cor-secundaria);
+    outline: 3px solid var(--cor-secundaria);
 }
 
 .unidades {
@@ -184,7 +183,7 @@ body {
     color: var(--cor-light);
     font-family: var(--fonte-titulo);
     font-size: 32px;
-    padding: 40px 8px 16px 8px;
+    margin: 40px 8px 16px 8px;
 }
 
 .unidades p {
@@ -192,7 +191,7 @@ body {
     font-family: var(--fonte-texto);
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 0px 8px 20px 8px;
 }
 
 #seletor-unidades {
@@ -203,12 +202,30 @@ body {
     color: var(--cor-primaria);
     border: 2px solid var(--cor-primaria);
     border-radius: 50px;
-    width: 260px;
-    height: 48px;
     font-family: var(--fonte-texto);
     font-weight: 700;
+    padding: 12px 32px;
+    margin-bottom: 40px;
 }
 
 #seta-baixo {
     color: white;
+}
+
+#seletor-unidades:hover {
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-texto);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 32px;
+}
+
+.rodape strong {
+    font-weight: 700;
 }
