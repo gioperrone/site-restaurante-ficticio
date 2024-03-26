@@ -197,7 +197,7 @@ body {
 #seletor-unidades {
     align-self: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: var(--cor-primaria);
     border: 2px solid var(--cor-primaria);
@@ -219,8 +219,8 @@ body {
 .map-mask {
     align-self: center;
     background-color: var(--cor-light);
-    width: 400px;
-    height: 300px;
+    width: 80vw;
+    height: 60vw;
     margin: 0px 16px 40px 16px;
 }
 
