@@ -68,12 +68,11 @@ body {
 }
 
 .banner-mask {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
-}
-
-.banner-img {
-    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(255, 255, 255, 0)), url(../img/banner-img01.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 .mais-pedidos {
