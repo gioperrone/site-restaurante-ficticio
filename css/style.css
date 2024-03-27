@@ -133,6 +133,7 @@ body {
     background-color: var(--cor-light);
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -152,7 +153,6 @@ body {
 }
 
 #abrir-cardapio {
-    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ body {
 }
 
 #abrir-cardapio:hover {
-    transition: .1s;
+    transition: .2s;
     background: none;
     color: var(--cor-secundaria);
     outline: 3px solid var(--cor-secundaria);
@@ -176,6 +176,7 @@ body {
     background-color: var(--cor-dark);
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -195,10 +196,10 @@ body {
 }
 
 #seletor-unidades {
-    align-self: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 260px;
     color: var(--cor-primaria);
     border: 2px solid var(--cor-primaria);
     border-radius: 50px;
@@ -206,6 +207,12 @@ body {
     font-weight: 700;
     padding: 12px 32px;
     margin-bottom: 40px;
+}
+
+#seletor-unidades:hover {
+    transition: .2s;
+    background-color: var(--cor-primaria);
+    color: var(--cor-dark);
 }
 
 #seta-baixo {
@@ -220,7 +227,7 @@ body {
     align-self: center;
     background-color: var(--cor-light);
     width: 80vw;
-    height: 60vw;
+    height: 60vh;
     margin: 0px 16px 40px 16px;
 }
 
