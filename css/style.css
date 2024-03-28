@@ -23,6 +23,10 @@ body {
     background-color: white;
 }
 
+.bloquear-scroll { /* classe ativada pelo cabecalho.js */
+    overflow-y: hidden;
+}
+
 .cabecalho {
     position: fixed;
     height: 140px;
@@ -35,8 +39,9 @@ body {
     transition: .2s;
 }
 
-.cabecalho-bg { /* classe adicionada pelo cabecalho.js */
-    background-color: #2d1e1ef6;
+.cabecalho-bg { /* classe ativada pelo cabecalho.js */
+    z-index: 1;
+    background-color: #2d1e1eb6;
     backdrop-filter: blur(12px);
     box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.40);
     height: 160px;
@@ -53,6 +58,7 @@ body {
 }
 
 #burger {
+    z-index: 1;
     color: var(--cor-light);
     margin: 8px;
     padding: 12px;
@@ -65,6 +71,36 @@ body {
 
 .menu {
     display: none;
+}
+
+.menu-ativado { /* classe ativada no cabecalho.js */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0px;
+    position: fixed;
+    top: 0;
+    padding: 16px;
+    color: var(--cor-light);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    background-color: var(--cor-dark);
+}
+
+#menu-item-01 {
+    margin-top: 100px;
+}
+
+.menu-item {
+    padding: 50px;
+    border-bottom: 1px solid #644343;
+}
+
+.menu-item:hover {
+    transition: .5s;
+    background-color: #644343;
 }
 
 .banner-mask {
@@ -116,6 +152,7 @@ body {
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card-mask {
@@ -135,6 +172,12 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: var(--cor-primaria);
+}
+
+.card:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.40);
 }
 
 .cardapio {
