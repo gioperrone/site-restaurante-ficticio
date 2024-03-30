@@ -13,3 +13,11 @@ burger.addEventListener("click", function() {
     menu.classList.toggle('menu-ativado');
     document.body.classList.toggle('bloquear-scroll');
 });
+
+function trocaBotao() {
+    if (burger.innerHTML == "menu") {
+        burger.innerHTML = "close";
+    } else {
+        burger.innerHTML = "menu";
+    };
+};
