@@ -1,4 +1,4 @@
-//exibindo e escondendo background do cabeçalho
+//rolagem do cabeçalho
 window.addEventListener("scroll", function() {
     const header = document.querySelector('.cabecalho');
     header.classList.toggle('cabecalho-bg', window.scrollY > 0);
