@@ -26,8 +26,9 @@ body {
     background-color: white;
 }
 
-.bloquear-scroll { /* classe ativada pelo cabecalho.js */
+.bloquear-scroll { /* classe ativada pelo JS */
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .cabecalho {
@@ -42,7 +43,7 @@ body {
     transition: .2s;
 }
 
-.cabecalho-bg { /* classe ativada pelo cabecalho.js */
+.cabecalho-bg { /* classe ativada pelo JS */
     z-index: 1;
     background-color: #2d1e1eb6;
     backdrop-filter: blur(12px);
@@ -70,7 +71,7 @@ body {
     display: none;
 }
 
-.menu-ativado { /* classe ativada no cabecalho.js */
+.menu-ativado { /* classe ativada pelo JS */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -182,6 +183,85 @@ body {
     box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.40);
 }
 
+/* MODALS - OS MAIS PEDIDOS */
+.modal-container {
+    display: none;
+}
+
+.modal-container-ativado { /* classe ativada pelo JS */
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    margin: 12px;
+    padding: 6px 12px 24px 12px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.40);
+}
+
+#close-modal {
+    align-self: end;
+    font-size: 24px;
+    color: gray;
+    padding: 12px 6px 12px 12px;
+    cursor: pointer;
+}
+
+.modal-banner {
+    width: 260px;
+    height: 200px;
+    background-image: url(../img/hamburguer.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.modal h1 {
+    margin-top: 24px;
+}
+
+.btn-pedir-agora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: 700;
+    color: #ea1d2c;
+    border: 3px solid #ea1d2c;
+    border-radius: 50px;
+    padding: 16px 32px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+/* .btn-pedir-agora:hover {
+    color: white;
+    background-color: #ea1d2c;
+} */
+
+
+#logo-ifood {
+    width: 40px;
+}
 
 /* CARDÁPIO */
 .cardapio {
@@ -283,7 +363,7 @@ body {
     display: none;
 }
 
-.unidades-opcoes-ativado {
+.unidades-opcoes-ativado { /* classe ativada pelo JS */
     display: flex;
     flex-direction: column;
     align-items: start;
