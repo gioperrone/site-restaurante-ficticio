@@ -6,10 +6,10 @@ let modal = document.querySelector('.modal');
 
 function abrirModal() {
     modalContainer.classList.add('modal-container-ativado');
-    document.body.classList.add('bloquear-scroll');
+    // document.body.classList.add('bloquear-scroll');
 };
 
 function fecharModal() {
     modalContainer.classList.remove('modal-container-ativado');
-    document.body.classList.remove('bloquear-scroll');
+    // document.body.classList.remove('bloquear-scroll');
 };
