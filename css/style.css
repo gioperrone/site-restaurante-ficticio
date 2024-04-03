@@ -274,6 +274,12 @@ body {
     cursor: pointer;
 }
 
+.logo-ifood {
+    width: 40px;
+}
+/* OBS.: Evento mouseover e mouseout do .btn-pedir-agora e .logo-ifood feito via JS */
+
+
 .modal-background {
     position: fixed;
     top: 0;
@@ -282,16 +288,6 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(12px);
-}
-
-.btn-pedir-agora:hover {
-    color: white;
-    background-color: #ea1d2c;
-}
-
-
-#logo-ifood {
-    width: 40px;
 }
 
 /* CARDÁPIO */
