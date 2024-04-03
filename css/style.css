@@ -225,6 +225,10 @@ body {
     cursor: pointer;
 }
 
+.close-modal:hover {
+    color: black;
+}
+
 .modal-container-banner {
     width: 260px;
     height: 200px;
