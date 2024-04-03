@@ -17,18 +17,21 @@ cards.forEach(card => {
 
 
 //mouseover e mouseout no botão Pedir Agora (ifood)
-const ifood = document.querySelector('.logo-ifood');
-const btnPedirAgora = document.querySelector('.btn-pedir-agora');
+const btnPedirAgoraList = document.querySelectorAll('.btn-pedir-agora');
+const logoIfoodList = document.querySelectorAll('.logo-ifood');
 
-btnPedirAgora.addEventListener('mouseover', () => {
-    btnPedirAgora.style.backgroundColor = "#ea1d2c";
-    btnPedirAgora.style.color = "white";
-    ifood.style.filter = "brightness(1000%)";
-});
-
-
-btnPedirAgora.addEventListener("mouseout", () => {
-    btnPedirAgora.style.backgroundColor = "white";
-    btnPedirAgora.style.color = "#ea1d2c";
-    ifood.style.filter = "";
+btnPedirAgoraList.forEach((btnPedirAgora, index) => {
+    const logoIfood = logoIfoodList[index];
+    
+    btnPedirAgora.addEventListener('mouseover', () => {
+        btnPedirAgora.style.backgroundColor = "#ea1d2c";
+        btnPedirAgora.style.color = "white";
+        logoIfood.style.filter = "brightness(1000%)";
+    });
+    
+    btnPedirAgora.addEventListener("mouseout", () => {
+        btnPedirAgora.style.backgroundColor = "white";
+        btnPedirAgora.style.color = "#ea1d2c";
+        logoIfood.style.filter = "";
+    });
 });
