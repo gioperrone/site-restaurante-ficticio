@@ -241,6 +241,18 @@ body {
     background-image: url(../img/costela-suina.jpg);
 }
 
+#modal-container-banner-03 {
+    background-image: url(../img/frango-passarinho.jpg);
+}
+
+#modal-container-banner-04 {
+    background-image: url(../img/queijo-coalho.jpg);
+}
+
+#modal-container-banner-05 {
+    background-image: url(../img/picanha.jpg);
+}
+
 .modal h1 {
     margin-top: 24px;
 }
