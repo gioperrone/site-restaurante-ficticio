@@ -32,33 +32,43 @@
             <h1>OS MAIS PEDIDOS</h1>
             <p>Conheça os pratos favoritos da galera.</p>
             <ul class="cards-lista">
-                <li class="card" id="card-01" onclick="abrirModal()">
+                <li class="card" id="card-01" data-modal-id="modal-01">
                     <div class="card-mask"><img class="card-img" src="img/hamburguer.jpg" alt="Hambúrguer"></div>
                     <h2>HAMBÚRGUER</h2>
                 </li>
-                <li class="card" id="card-02" onclick="abrirModal()">
+                <li class="card" id="card-02" data-modal-id="modal-02">
                     <div class="card-mask"><img class="card-img" src="img/costela-suina.jpg" alt="Costela suína"></div>
                     <h2>COSTELA SUÍNA</h2>
                 </li>
-                <li class="card" id="card-03" onclick="abrirModal()">
+                <li class="card" id="card-03">
                     <div class="card-mask"><img class="card-img" src="img/frango-passarinho.jpg" alt="Frango à passarinho"></div>
                     <h2>FRANGO À PASSARINHO</h2>
                 </li>
-                <li class="card" id="card-04" onclick="abrirModal()">
+                <li class="card" id="card-04">
                     <div class="card-mask"><img class="card-img" src="img/queijo-coalho.jpg" alt="Queijo coalho"></div>
                     <h2>QUEIJO COALHO</h2>
                 </li>
-                <li class="card" id="card-05" onclick="abrirModal()">
+                <li class="card" id="card-05">
                     <div class="card-mask"><img class="card-img" src="img/picanha.jpg" alt="Picanha"></div>
                     <h2>PICANHA</h2>
                 </li>
             </ul>
-            <div class="modal-container" id="modal-01">
-                <div class="modal">
-                    <span class="material-symbols-outlined close-modal" onclick="fecharModal()">close</span>
-                    <div class="modal-banner"></div>
+            <div class="modal" id="modal-01">
+                <div class="modal-container">
+                    <span class="material-symbols-outlined close-modal">close</span>
+                    <div class="modal-container-banner" id="modal-container-banner-01"></div>
                     <h1>HAMBÚRGUER</h1>
                     <p>Blend de 200g de carne, com molho de ervas, mussarela, alface, tomate, picles e opção de queijo extra (cheddar, mussarela, queijo prato ou parmesão).</p>
+                    <a href="https://www.ifood.com.br/" target="_blank" class="btn-pedir-agora"><img id="logo-ifood" src="img/logo-ifood.svg" alt="Logo do IFood">Pedir agora</a>
+                </div>
+                <div class="modal-background"></div>
+            </div>
+            <div class="modal" id="modal-02">
+                <div class="modal-container">
+                    <span class="material-symbols-outlined close-modal">close</span>
+                    <div class="modal-container-banner" id="modal-container-banner-02"></div>
+                    <h1>COSTELA SUÍNA</h1>
+                    <p>Costela de porco ao molho barbecue, com direito a três acompanhamentos (batata portuguesa, purê de batata, batata frita, arroz, feijão preto e salada verde).</p>
                     <a href="https://www.ifood.com.br/" target="_blank" class="btn-pedir-agora"><img id="logo-ifood" src="img/logo-ifood.svg" alt="Logo do IFood">Pedir agora</a>
                 </div>
                 <div class="modal-background"></div>

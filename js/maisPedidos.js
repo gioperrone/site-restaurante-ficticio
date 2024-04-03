@@ -1,11 +1,20 @@
-//abrir e fechar modals
-const modalContainer = document.querySelector('.modal-container');
+const cards = document.querySelectorAll('.card');
 
 
-function abrirModal() {
-    modalContainer.classList.add('modal-container-ativado');
-};
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const modalId = card.getAttribute('data-modal-id');
+        const modal = document.getElementById(modalId);
+        const closeModal = modal.querySelector('.close-modal');
 
-function fecharModal() {
-    modalContainer.classList.remove('modal-container-ativado');
-};
+
+        //abrir modals
+        modal.classList.add('modal-ativado');
+
+
+        //fechar modals
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('modal-ativado');
+        });
+    });
+});
