@@ -15,7 +15,7 @@ function trocaSeta() {
 };
 
 
-//dropdown no escolha a unidade
+//abrindo e fechando dropdown
 btnUnidades.addEventListener("click", function() {
     unidadesOpcoes.classList.toggle('unidades-opcoes-ativado');
     dropdownAberto = true;
@@ -23,6 +23,7 @@ btnUnidades.addEventListener("click", function() {
 });
 
 
+//fechando dropdown ao clicar fora ou ao escolher um item
 window.addEventListener('click', function(evento) {
     if (!btnUnidades.contains(evento.target) && dropdownAberto) {
         unidadesOpcoes.classList.remove('unidades-opcoes-ativado');
