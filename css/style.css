@@ -423,6 +423,10 @@ body {
 }
 
 .map {
+    display: none;
+}
+
+.map-ativado {
     align-self: center;
     background-color: var(--cor-light);
     width: 80vw;
