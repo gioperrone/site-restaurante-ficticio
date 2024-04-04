@@ -427,6 +427,7 @@ body {
 }
 
 .map-ativado {
+    display: flex;
     align-self: center;
     background-color: var(--cor-light);
     width: 80vw;

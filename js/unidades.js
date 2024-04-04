@@ -1,6 +1,7 @@
 const seta = document.querySelector('#seta-baixo');
 const btnUnidades = document.querySelector('#btn-unidades');
-const unidadesOpcoes = document.querySelector('.unidades-opcoes');
+const unidadesOpcoes = document.querySelector('.unidades-opcoes'); //div com opções
+const unidadesOpcaoLista = document.querySelectorAll('.unidades-opcao'); //lista com cada opção
 
 let dropdownAberto = false;
 
@@ -34,3 +35,11 @@ window.addEventListener('click', function(evento) {
 
 
 //exibindo os mapas correspondentes
+unidadesOpcaoLista.forEach(unidadesOpcao => {
+    unidadesOpcao.addEventListener('click', () => {
+        const mapaId = unidadesOpcao.getAttribute('data-map-id');
+        const map = document.getElementById(mapaId);
+
+        map.classList.add('map-ativado');
+    });
+});
