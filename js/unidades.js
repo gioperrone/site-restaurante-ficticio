@@ -4,6 +4,7 @@ const unidadesOpcoes = document.querySelector('.unidades-opcoes'); //div com op�
 const unidadesOpcaoLista = document.querySelectorAll('.unidades-opcao'); //lista com cada opção
 
 let dropdownAberto = false;
+let mapaAberto = false;
 
 
 //declarando a função que troca a seta para cima e para baixo
@@ -39,6 +40,10 @@ unidadesOpcaoLista.forEach(unidadesOpcao => {
     unidadesOpcao.addEventListener('click', () => {
         const mapaId = unidadesOpcao.getAttribute('data-map-id');
         const map = document.getElementById(mapaId);
+
+        document.querySelectorAll('.map-ativado').forEach(map => {
+            map.classList.remove('map-ativado');
+        });
 
         map.classList.add('map-ativado');
     });
