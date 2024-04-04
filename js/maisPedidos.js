@@ -1,15 +1,21 @@
-//abrir e fechar modals
 const cards = document.querySelectorAll('.card');
 
+
+//abrir e fechar modals
 cards.forEach(card => {
     card.addEventListener('click', () => {
         const modalId = card.getAttribute('data-modal-id');
         const modal = document.getElementById(modalId);
         const closeModal = modal.querySelector('.close-modal');
+        const modalBackground = modal.querySelector('.modal-background');
 
         modal.classList.add('modal-ativado');
 
         closeModal.addEventListener('click', () => {
+            modal.classList.remove('modal-ativado');
+        });
+
+        modalBackground.addEventListener('click', () => {
             modal.classList.remove('modal-ativado');
         });
     });
