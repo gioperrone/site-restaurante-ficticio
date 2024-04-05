@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints (fonte: w3cschools.com | em JAN/2024)
+----------------------------------------------------------------
+
+- Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+- Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+- Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+- Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+- Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+
+*/
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 24px;
+    }
+
+    #burger {
+        margin: 24px;
+        padding: 8px;
+    }
+
+    .menu-ativado { /* classe ativada pelo JS */
+        padding: 0px;
+    }
+
+}
+
+
+
+/* - Large devices (LAPTOPS/DESKTOPS, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* LEMBRAR DE REMOVER ROLAGEM NOS CARDS DOS MAIS PEDIDOS */
+
+}
+
+
+
+/* - Extra large devices (LARGE LAPTOPS AND DESKTOPS, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    .menu-ativado {
+        display: none;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 56px;
+        color: var(--cor-light);
+        font-family: var(--fonte-texto);
+        font-weight: 600;
+    }
+
+    #menu-item-01 {
+        margin-top: 0px;
+    }
+
+    .menu-item {
+        padding: 8px 0px;
+        border-bottom: none;
+    }
+
+    .menu-item:hover {
+        transition: .5s;
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .map-ativado {
+        max-width: 2000px;
+    }
+
+}
