@@ -45,14 +45,12 @@
 }
 
 
-
 /* - Large devices (LAPTOPS/DESKTOPS, 992px and up) */
 @media only screen and (min-width: 992px) {
 
     /* LEMBRAR DE REMOVER ROLAGEM NOS CARDS DOS MAIS PEDIDOS */
 
 }
-
 
 
 /* - Extra large devices (LARGE LAPTOPS AND DESKTOPS, 1200px and up) */
@@ -98,6 +96,16 @@
 
     .map-ativado {
         max-width: 2000px;
+    }
+
+}
+
+
+/* - Scroll vertical de acordo com a altura */
+@media only screen and (max-height: 600px) {
+
+    .menu {
+        overflow-y: scroll;
     }
 
 }
