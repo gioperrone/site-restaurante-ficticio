@@ -101,11 +101,44 @@
 }
 
 
-/* - Scroll vertical de acordo com a altura */
+/* - Scroll vertical (altura do menu hambúrguer) */
 @media only screen and (max-height: 600px) {
 
     .menu {
         overflow-y: scroll;
+    }
+
+}
+
+
+/* - Scroll vertical (altura dos modals - os mais pedidos) */
+@media only screen and (max-height: 550px) {
+
+    .modal-container {
+        overflow-y: scroll;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+        padding: 6px 12px 24px 12px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.40);
+    }
+
+    .close-modal {
+        margin-left: 250px;
+    }
+
+    .modal-container-banner {
+        margin: auto;
+    }
+
+    .btn-pedir-agora {
+        width: 150px;
+        margin: auto;
     }
 
 }
